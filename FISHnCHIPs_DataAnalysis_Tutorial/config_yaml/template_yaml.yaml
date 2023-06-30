@@ -1,0 +1,31 @@
+mainpath: '//172.20.29.25/WanYi/Wan Yi/Data/Imaging/!Cellfish/Lm71_mbrain_18hybs/20230310_WY_Lm71_mbrain_3cD_10x/'
+schema: '//172.20.29.25/Xinrui/FISHnCHIPs_ImageAnalysis2023/config_yaml/mBrain_Lm71/schema_Lm71_0310_10x_newformat.csv'
+dapiname: 'DAPI_0_'
+
+fovs: 48 # number of fovs to analyse (start from first fov)
+fov_x: 8
+fov_y: 6
+overlap_in_px: 200
+
+background: "bleach"
+remove_background: 'subtract'
+show_dapiseg: True
+segmentation: 'cellpose'   
+segment_DAPI_format: '.tif'
+
+segment_mode: 'Nuclei'   # 'Cytoplasm', 'Cytoplasm2', 'Cytoplasm2_Omnipose', 'Nuclei' for cellpose
+cellsize: 15          #50   
+flow_threshold: 1 # Default 0.4; Increase this threshold if cellpose is not returning as many ROIs as you’d expect.
+cellprob_threshold: 0.0 # Default 0.0; Decrease this threshold if cellpose is not returning as many ROIs as you’d expect.
+
+mask_dilate_factor: 2
+filtermask: False            # remove small mask 
+filtermask_size: 0
+
+anchor_name: 'Cy7_3_' # the hyb image to segment
+anchor_celltype: 'CAF_1' # for segment hyb image (instead of DAPI)
+
+fusedpath: '//172.20.29.25/norbert/BACKUP/Data/2022_CellFISH/20220820_NH_L68_hCRC_3cD/Fused_subtractBleach_20220915-173102/Fused_Cy7_Hyb3_Bleach_subtract.tif' # for watershed, to set vmin and vmax
+cutoff_threshold: 12     # for watershed
+opening_threshold: 1       # for watershed to remove small mask (number of rounds of erosion to do)
+kernel_size: 3 # for watershed, gaussian smoothing to blur the image

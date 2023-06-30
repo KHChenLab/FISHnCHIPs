@@ -1,0 +1,24 @@
+mainpath: './input_files/'
+schema: './input_files/schema_Lm71_0316_10x_newformat.csv'
+dapiname: 'DAPI_0_'
+
+fovs: 4 # number of fovs to analyse (start from first fov)
+fov_x: 2
+fov_y: 2
+overlap_in_px: 389 # 389
+
+background: "bleach"
+remove_background: 'subtract'
+show_dapiseg: True
+segmentation: 'cellpose'   
+segment_DAPI_format: '.tif'
+
+segment_mode: 'Nuclei'   # 'Cytoplasm', 'Cytoplasm2', 'Cytoplasm2_Omnipose', 'Nuclei' for cellpose
+cellsize: 15          #50   
+flow_threshold: 1 # Default 0.4; Increase this threshold if cellpose is not returning as many ROIs as you’d expect.
+cellprob_threshold: -6 # Default 0.0; Decrease this threshold if cellpose is not returning as many ROIs as you’d expect.
+
+mask_dilate_factor: 2
+filtermask: False            # remove small mask 
+filtermask_size: 0
+
