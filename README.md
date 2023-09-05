@@ -354,7 +354,7 @@ An explanation of each of the parameters used in **`Gene panel design tutorial.i
 * CHENG Teh How *-GitHub setup, tutorial design and code troubleshooting-* (https://github.com/ChengDHow)
 
 ## License
-See full license [here](https://github.com/ChengDHow/FISHnCHIPs/blob/main/LICENSE).
+See full license [here](https://github.com/KHChenLab/FISHnCHIPs/blob/main/LICENSE).
 
 ## Acknowledgements
 * Shyam Prabhakar
