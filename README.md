@@ -1,7 +1,7 @@
 # [FISHnCHIPs: Fluorescence In Situ Hybridization of Cellular HeterogeneIty and Gene Expression Programs](https://www.biorxiv.org/content/10.1101/2023.04.11.536345v1)
 
 ## About
-We present FISHnCHIPs for highly sensitive in situ profiling of cell types and gene expression programs. FISHnCHIPs achieves this by simultaneously imaging ∼2-35 co-expressed genes that are spatially co-localized in tissues, resulting in similar spatial information as single-gene FISH, but at ∼2-20-fold higher sensitivity. See (https://www.biorxiv.org/content/10.1101/2023.04.11.536345v1). This software guides users to design and evaluate their own gene panel using input from scRNA-seq. We also provide the FISHnCHIPs data analysis pipeline that we used to process the raw FISHnCHIPs data and cluster the module-cell matrix to define cell types.
+We present FISHnCHIPs for highly sensitive in situ profiling of cell types and gene expression programs. FISHnCHIPs achieves this by simultaneously imaging ∼2-35 co-expressed genes that are spatially co-localized in tissues, resulting in similar spatial information as single-gene FISH, but at ∼2-20-fold higher sensitivity. See https://www.nature.com/articles/s41467-024-46669-y. This software guides users to design and evaluate their own gene panel using input from scRNA-seq. We also provide the FISHnCHIPs data analysis pipeline that we used to process the raw FISHnCHIPs data and cluster the module-cell matrix to define cell types.
 
 ![Workflow of panel design](/assets/images/FISHnCHIPs-Workflow-PanelDesign_v3.jpg)
 
